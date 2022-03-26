@@ -60,7 +60,7 @@ write-host "check this"
 #=========================================================================================================================
 Write-host "Preparing email" -ForegroundColor Green
 start-sleep -seconds 5
-$encrypted = Get-Content 'S:\IT Department\Network Service Tools\xyz.txt' | ConvertTo-SecureString
+$encrypted = Get-Content 'S:\IT Department\Automation\pass.txt' | Convertto-SecureString
 $emailusername = 'support@edelsteincpa.com'
 $credential = New-Object System.Management.Automation.PsCredential($emailusername, $encrypted)
 
